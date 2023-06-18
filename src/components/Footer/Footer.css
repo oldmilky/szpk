@@ -1,0 +1,114 @@
+.footer {
+    max-width: 100%;
+    margin: 0;
+}
+
+.footer__content {
+    background-color: #DFDFDF;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.footer_author {
+    max-width: 1770px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 470px) {
+    .footer_author {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.footer_author_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #717070;
+    margin: 0;
+}
+
+.footer_author__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #717070;
+    margin: 0;
+}
+
+.footer_author__link {
+    text-decoration: none;
+    color: #0093DD;
+    /* border-bottom: 1px solid #0093DD; */
+    padding: 0 0 3px 0;
+}
+
+.footer__container {
+    max-width: 1770px;
+    padding: 40px 20px 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__wrap {
+    display: flex;
+    gap: 100px;
+}
+
+@media screen and (max-width: 818px) {
+    .footer__wrap {
+        gap: 50px;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 670px) {
+    .footer__wrapper:last-of-type {
+        display: none;
+    }
+}
+
+.footer__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0 0 20px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid #0093DD;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width: 670px) {
+    .footer__subtitle {
+        font-size: 17px;
+    }
+}

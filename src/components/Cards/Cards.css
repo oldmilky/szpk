@@ -1,0 +1,112 @@
+.cards {
+    max-width: 100%;
+    margin: 90px auto 150px auto;
+    
+}
+
+.cards__container {
+    max-width: 1770px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.cards__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin: 0 0 90px 0;
+    text-align: center;
+}
+
+.cards__cards {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fill, 370px);
+    justify-content: center;
+}
+
+@media screen and (max-width: 410px) {
+    .cards__cards {
+        grid-template-columns: repeat(auto-fill, 360px);
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .cards__cards {
+        grid-template-columns: repeat(auto-fill, 350px);
+    }
+}
+
+.cards__card {
+    border: 2px solid #0093DD;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,.6);
+    cursor: pointer;
+}
+
+.cards__card_image {
+    /* background-image: url(../../images/product1.svg); */
+    background-color: #2a2c2f;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    width: 366px;
+    height: 356px;
+}
+
+@media screen and (max-width: 410px) {
+    .cards__card_image {
+        width: 356px;
+        height: 346px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .cards__card_image {
+        width: 346px;
+        height: 336px;
+    }
+}
+
+.cards__wrap {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cards__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 0 0 0 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 10%;
+    text-align: start;
+}
+
+.cards__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0 0 0 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 30%;
+    text-align: start;
+}
